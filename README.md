@@ -1,5 +1,22 @@
 # Nutrivision - Food Image Classification and Nutrition Analysis
 
+## Team CyberKnights
+
+## Problem Statement
+In today's fast-paced world, maintaining a healthy diet is becoming increasingly challenging. People often struggle with:
+- Identifying the nutritional content of their meals
+- Making informed food choices
+- Tracking their daily nutritional intake
+- Understanding the impact of their food choices on their health
+
+Traditional methods of nutritional analysis are:
+- Time-consuming
+- Error-prone
+- Require manual input
+- Often inaccessible in real-time
+
+Nutrivision aims to solve these challenges by providing an automated, accurate, and user-friendly solution for food image classification and nutritional analysis.
+
 ## Project Overview
 Nutrivision is an innovative food image classification system that uses computer vision to identify food items and provide nutritional information. The project combines machine learning models with a user-friendly web interface to help users understand the nutritional content of their meals.
 
@@ -32,8 +49,8 @@ Nutrivision/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/phoenixdev100/nutrivision.git
-cd nutrivision
+git clone https://github.com/phoenixdev100/CyberKnights-NutriVision.git
+cd CyberKnights-NutriVision
 ```
 
 2. Create a virtual environment:
