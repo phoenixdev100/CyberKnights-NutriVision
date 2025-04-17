@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Nutri Vision</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Nutri<span>Vision</span></h1>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#dashboard" class="active">Dashboard</a></li>
+                    <li><a href="#nutrition">Nutrition</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                </ul>
+            </nav>
+            <div class="user-menu">
+                <button class="btn btn-outline" onclick="window.location.href='login.html'">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="dashboard-container">
+        <div class="container">
+            <h2>Welcome to Your Dashboard</h2>
+            <p>Start tracking your nutrition by taking a photo of your food.</p>
+            
+            <div class="dashboard-actions">
+                <button class="btn btn-primary btn-large">
+                    <i class="fas fa-camera"></i>
+                    Take a Photo
+                </button>
+            </div>
+
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Today's Calories</h3>
+                    <p>0 kcal</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-apple-alt"></i>
+                    <h3>Meals Tracked</h3>
+                    <p>0</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Streak</h3>
+                    <p>0 days</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

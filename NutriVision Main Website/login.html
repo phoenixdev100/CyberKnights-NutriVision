@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup - Nutri Vision</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="auth-page">
+    <div class="auth-container">
+        <div class="auth-left">
+            <div class="auth-logo">
+                <a href="index.html">
+                    <h1>Nutri<span>Vision</span></h1>
+                </a>
+            </div>
+            <div class="auth-image">
+                <img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?q=80&w=2732&auto=format&fit=crop&w=800&h=450" alt="Healthy food composition">
+                <div class="floating-card auth-card-1">
+                    <i class="fas fa-camera"></i>
+                    <span>Snap</span>
+                </div>
+                <div class="floating-card auth-card-2">
+                    <i class="fas fa-brain"></i>
+                    <span>Analyze</span>
+                </div>
+                <div class="floating-card auth-card-3">
+                    <i class="fas fa-chart-pie"></i>
+                    <span>Track</span>
+                </div>
+            </div>
+            <div class="auth-text">
+                <h2>Transform Your Nutrition Journey</h2>
+                <p>Take a photo of your food and instantly get detailed nutritional information to help you make healthier choices.</p>
+            </div>
+        </div>
+        <div class="auth-right">
+            <div class="auth-tabs">
+                <div class="auth-tab login-tab active" data-target="login-form">Login</div>
+                <div class="auth-tab signup-tab" data-target="signup-form">Sign Up</div>
+            </div>
+            <div class="auth-forms">
+                <form id="login-form" class="active">
+                    <h2>Welcome Back!</h2>
+                    <p>Enter your credentials to access your account</p>
+
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="login-email" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="login-password" placeholder="Enter your password" required>
+                            <i class="fas fa-eye toggle-password"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-auth">Login</button>
+
+                    <div class="auth-divider">
+                        <span>or continue with</span>
+                    </div>
+
+                    <div class="social-auth">
+                        <button type="button" class="social-btn google">
+                            <i class="fab fa-google"></i>
+                            <span>Google</span>
+                        </button>
+                        <button type="button" class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </button>
+                    </div>
+
+                    <div class="auth-switch">
+                        <p>Don't have an account? <a href="#" class="switch-to-signup">Sign Up</a></p>
+                    </div>
+                </form>
+
+                <form id="signup-form">
+                    <h2>Create Account</h2>
+                    <p>Join NutriVision and start your health journey</p>
+
+                    <div class="form-group">
+                        <label for="signup-name">Full Name</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="signup-name" placeholder="Enter your full name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signup-email">Email</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="signup-email" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signup-password">Password</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="signup-password" placeholder="Create a password" required>
+                            <i class="fas fa-eye toggle-password"></i>
+                        </div>
+                        <div class="password-strength">
+                            <div class="strength-meter">
+                                <div class="strength-segment"></div>
+                                <div class="strength-segment"></div>
+                                <div class="strength-segment"></div>
+                                <div class="strength-segment"></div>
+                            </div>
+                            <span class="strength-text">Password strength</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="terms-check">
+                            <input type="checkbox" id="terms" required>
+                            <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-auth">Create Account</button>
+
+                    <div class="auth-divider">
+                        <span>or sign up with</span>
+                    </div>
+
+                    <div class="social-auth">
+                        <button type="button" class="social-btn google">
+                            <i class="fab fa-google"></i>
+                            <span>Google</span>
+                        </button>
+                        <button type="button" class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </button>
+                    </div>
+
+                    <div class="auth-switch">
+                        <p>Already have an account? <a href="#" class="switch-to-login">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
